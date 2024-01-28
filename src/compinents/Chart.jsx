@@ -74,7 +74,7 @@ const ChartL = () => {
   }, []);
   return (
     <div>
-      <canvas ref={chartRef} width={300} height={300}></canvas>
+      <canvas ref={chartRef} className="w-full h-52 lg:w-80 lg:h-80"></canvas>
     </div>
   );
 };

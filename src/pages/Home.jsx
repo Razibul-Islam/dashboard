@@ -7,7 +7,7 @@ const Home = () => {
       <div className="pb-5">
         <h1 className="text-2xl">Dashboard</h1>
       </div>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex border border-black/5">
           {/* Setting */}
           <div className="p-5 bg-[#00C0EF]">
@@ -91,7 +91,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-5">
+      <div className="md:flex gap-5">
         <div className="flex-[2] mt-5">
           <ChartL />
         </div>

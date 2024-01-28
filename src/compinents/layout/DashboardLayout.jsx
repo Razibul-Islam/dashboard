@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "../Navbar";
 
 const DashboardLayout = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const tabletWidth = window.innerWidth > 768;
+  const [isOpen, setIsOpen] = useState(tabletWidth);
 
   const mainClassNames = `duration-500 ${isOpen ? "ml-72" : "ml-0"}`; // Add your main class names here
   const overlayClassNames = `
@@ -19,6 +20,18 @@ const DashboardLayout = () => {
     ${isOpen ? "translate-x-0" : "-translate-x-full"}
   `;
 
+  useEffect(() => {
+    const handleResize = () => {
+      const newIsOpen = window.innerWidth > 768;
+      setIsOpen(newIsOpen);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <main className={mainClassNames}>
       <header>
@@ -29,14 +42,30 @@ const DashboardLayout = () => {
       <main className={overlayClassNames}>
         <section className={`${drawerClassNames}`}>
           <article className="relative w-screen max-w-96 pb-10 flex flex-col space-y-6 overflow-hidden h-full bg-[#1E282C] ">
-            <header className="p-4 font-bold text-lg uppercase">
-              Admin Dashboard
+            <header className="p-4 font-bold text-lg uppercase flex items-center">
+              <h1 className="mr-14">Admin Dashboard</h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="md:hidden block"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
             </header>
             <div className="overflow-y-auto overflow-x-hidden flex-grow ">
               <ul className="flex flex-col py-4 space-y-1">
                 <li>
                   <Link
-                  to="/manageWebsite"
+                    to="/manageWebsite"
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -62,7 +91,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to="/alluser"
+                    to="/alluser"
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -88,7 +117,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -114,7 +143,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -140,7 +169,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -166,7 +195,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -192,7 +221,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -218,7 +247,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -244,7 +273,7 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -271,7 +300,7 @@ const DashboardLayout = () => {
 
                 <li>
                   <Link
-                  to=""
+                    to=""
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">

@@ -5,9 +5,9 @@ const AllUser = () => {
   const [createUser, setCreateUser] = useState(false);
 
   return (
-    <div className="bg-[#F1F5F9] w-full  p-10">
-      <div className="bg-white p-10">
-        <div className="flex justify-between items-center">
+    <div className="bg-[#F1F5F9] w-full p-0 md:p-10">
+      <div className="bg-white p-5 md:p-10">
+        <div className="md:flex justify-between items-center">
           <h1 className="text-[#8a99af] text-xl font-medium">
             User Information
           </h1>
@@ -22,7 +22,7 @@ const AllUser = () => {
           <div className="flex flex-wrap">
             <div className="w-full">
               <ul
-                className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
+                className="flex mb-0 list-none gap-5 flex-wrap pt-3 pb-4 flex-row"
                 role="tablist"
               >
                 <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -132,7 +132,7 @@ const AllUser = () => {
                 Total All Users:0
               </h1>
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-                <div className="px-4 py-5 flex-auto">
+                <div className="px-1 md:px-4 py-5 flex-auto">
                   <div className="tab-content tab-space">
                     <div
                       className={openTab === 1 ? "block" : "hidden"}
@@ -368,9 +368,9 @@ const AllUser = () => {
             </div>
           </div>
         ) : (
-          <div className="p-10">
+          <div className="p-3 md:p-10">
             <form className="w-full bg-[#F1F5F9] py-10">
-              <div className="w-1/2 mx-auto space-y-5">
+              <div className="w-full md:w-1/2 px-5 md:px-0 mx-auto space-y-5">
                 <div className="flex flex-col">
                   <label htmlFor="name">Name</label>
                   <input

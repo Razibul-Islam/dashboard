@@ -2,7 +2,7 @@ const WebsiteManage = () => {
   return (
     <div className="p-10 bg-[#F1F5F9]">
       <form className="w-full bg-white py-10">
-        <div className="w-1/2 mx-auto space-y-5">
+        <div className="w-full px-4 md:px-0 md:w-1/2 mx-auto space-y-5">
           <div className="flex flex-col">
             <label htmlFor="url">Sites URL</label>
             <input
