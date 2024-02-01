@@ -3,6 +3,9 @@ import App from "../App";
 import Home from "../pages/Home";
 import WebsiteManage from "../pages/WebsiteManage";
 import AllUser from "../pages/AllUser";
+import ShortLink from "../pages/ShortLink";
+import Overview from "../pages/Overview";
+import Register from "../pages/Register";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +23,18 @@ export const router = createBrowserRouter([
             {
                 path:'alluser',
                 element: <AllUser/>
+            },
+            {
+                path:'shortLink',
+                element: <ShortLink/>
+            },
+            {
+                path:'overview',
+                element: <Overview/>
+            },
+            {
+                path:'login',
+                element: <Register/>
             },
         ]
     }

@@ -65,6 +65,85 @@ const DashboardLayout = () => {
               <ul className="flex flex-col py-4 space-y-1">
                 <li>
                   <Link
+                    to="/"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
+                  >
+                    <span className="inline-flex justify-center items-center ml-4">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M3 12h18M3 6h18M3 18h18"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="ml-2 text-sm tracking-wide truncate">
+                      Dashborad
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/overview"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
+                  >
+                    <span className="inline-flex justify-center items-center ml-4">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="ml-2 text-sm tracking-wide truncate">
+                      Overview
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to=""
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
+                  >
+                    <span className="inline-flex justify-center items-center ml-4">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M3 12h18M3 6h18M3 18h18"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="ml-2 text-sm tracking-wide truncate">
+                      Information
+                    </span>
+                  </Link>
+                </li>
+                
+                <li>
+                  <Link
                     to="/manageWebsite"
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
@@ -115,9 +194,36 @@ const DashboardLayout = () => {
                     </span>
                   </Link>
                 </li>
+                
                 <li>
                   <Link
                     to=""
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
+                  >
+                    <span className="inline-flex justify-center items-center ml-4">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span className="ml-2 text-sm tracking-wide truncate">
+                      Pending Request
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/shortLink"
                     className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
                   >
                     <span className="inline-flex justify-center items-center ml-4">
@@ -137,7 +243,7 @@ const DashboardLayout = () => {
                       </svg>
                     </span>
                     <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 3
+                      Shortener
                     </span>
                   </Link>
                 </li>
@@ -163,7 +269,7 @@ const DashboardLayout = () => {
                       </svg>
                     </span>
                     <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 4
+                      Website
                     </span>
                   </Link>
                 </li>
@@ -189,138 +295,7 @@ const DashboardLayout = () => {
                       </svg>
                     </span>
                     <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 5
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to=""
-                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
-                  >
-                    <span className="inline-flex justify-center items-center ml-4">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 6
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to=""
-                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
-                  >
-                    <span className="inline-flex justify-center items-center ml-4">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M3 12h18M3 6h18M3 18h18"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 7
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to=""
-                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
-                  >
-                    <span className="inline-flex justify-center items-center ml-4">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 8
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to=""
-                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
-                  >
-                    <span className="inline-flex justify-center items-center ml-4">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M3 12h18M3 6h18M3 18h18"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 9
-                    </span>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    to=""
-                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#1A2226] text-white/70 hover:text-white"
-                  >
-                    <span className="inline-flex justify-center items-center ml-4">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span className="ml-2 text-sm tracking-wide truncate">
-                      Item 10
+                      Notice
                     </span>
                   </Link>
                 </li>
