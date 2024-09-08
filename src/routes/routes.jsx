@@ -8,34 +8,34 @@ import Overview from "../pages/Overview";
 import Register from "../pages/Register";
 
 export const router = createBrowserRouter([
-    {
-        path:'/',
-        element:<App/>,
-        children:[
-            {
-                index:true,
-                element:<Home/>
-            },
-            {
-                path:'manageWebsite',
-                element: <WebsiteManage/>
-            },
-            {
-                path:'alluser',
-                element: <AllUser/>
-            },
-            {
-                path:'shortLink',
-                element: <ShortLink/>
-            },
-            {
-                path:'overview',
-                element: <Overview/>
-            },
-            {
-                path:'login',
-                element: <Register/>
-            },
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "manageWebsite",
+        element: <WebsiteManage />,
+      },
+      {
+        path: "alluser",
+        element: <AllUser />,
+      },
+      {
+        path: "shortLink",
+        element: <ShortLink />,
+      },
+      {
+        path: "overview",
+        element: <Overview />,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <Register />,
+  },
+]);
