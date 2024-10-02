@@ -21,14 +21,13 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Printer, ZoomIn } from "lucide-react";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import Pdf from "@/document/Pdf";
 import { Link } from "react-router-dom";
 
 const Order: React.FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
-  // const [print, setPrint] = useState<boolean>(false);
 
   const handlePrint = useReactToPrint({
     contentRef,

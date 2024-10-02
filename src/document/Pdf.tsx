@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/table";
 import { forwardRef } from "react";
 
-const Pdf = forwardRef<HTMLDivElement>((props, ref) => {
+const Pdf = forwardRef<HTMLDivElement>((_props, ref) => {
   return (
     <div ref={ref} className="max-w-lg mx-auto mt-10">
       <h1 className="text-center font-bold">KTOKY</h1>
