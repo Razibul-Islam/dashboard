@@ -31,7 +31,7 @@ import { Textarea } from "../ui/textarea";
 
 export default function OfferProduct() {
   return (
-    <div className="w-full p-5">
+    <div className="w-full p-5 pt-0">
       <h4 className="text-lg font-semibold mb-4">Offer Product</h4>
       <div className="mb-4 flex items-center justify-end">
         <Sheet>
@@ -40,7 +40,7 @@ export default function OfferProduct() {
               <Plus className="scale-75" /> Add Offer
             </Button>
           </SheetTrigger>
-          <SheetContent className="w-4/5">
+          <SheetContent className="w-full lg:w-4/5 overflow-auto">
             <SheetHeader>
               <SheetTitle>Add Offer</SheetTitle>
               <SheetDescription>
@@ -48,26 +48,26 @@ export default function OfferProduct() {
               </SheetDescription>
             </SheetHeader>
             <div className="space-y-4 my-5">
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Title/Name</p>
                 <Input
                   placeholder="Product Title/Name"
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Description</p>
                 <Textarea
                   placeholder="Product Description"
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Images</p>
                 <Input type="file" className="max-w-[700px]" />
               </div>
 
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Barcode</p>
                 <Input
                   placeholder="Product Barcode"
@@ -75,22 +75,22 @@ export default function OfferProduct() {
                 />
               </div>
 
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Price</p>
                 <Input placeholder="Product Price" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Sale Price</p>
                 <Input placeholder="Sale Price" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Quantity</p>
                 <Input
                   placeholder="Product Quantity"
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Barcode</p>
                 <Input placeholder="Add parcentage" className="max-w-[700px]" />
               </div>
@@ -172,7 +172,7 @@ export default function OfferProduct() {
                       </Tooltip>
                     </TooltipProvider>
                   </SheetTrigger>
-                  <SheetContent className="w-4/5">
+                  <SheetContent className="w-full lg:w-4/5 overflow-auto">
                     <SheetHeader>
                       <SheetTitle>Add Product</SheetTitle>
                       <SheetDescription>
@@ -180,26 +180,26 @@ export default function OfferProduct() {
                       </SheetDescription>
                     </SheetHeader>
                     <div className="space-y-4 my-5">
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Product Title/Name</p>
                         <Input
                           placeholder="Product Title/Name"
                           className="max-w-[700px]"
                         />
                       </div>
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Product Description</p>
                         <Textarea
                           placeholder="Product Description"
                           className="max-w-[700px]"
                         />
                       </div>
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Product Images</p>
                         <Input type="file" className="max-w-[700px]" />
                       </div>
 
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Product Barcode</p>
                         <Input
                           placeholder="Product Barcode"
@@ -207,28 +207,28 @@ export default function OfferProduct() {
                         />
                       </div>
 
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Product Price</p>
                         <Input
                           placeholder="Product Price"
                           className="max-w-[700px]"
                         />
                       </div>
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Sale Price</p>
                         <Input
                           placeholder="Sale Price"
                           className="max-w-[700px]"
                         />
                       </div>
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Product Quantity</p>
                         <Input
                           placeholder="Product Quantity"
                           className="max-w-[700px]"
                         />
                       </div>
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Product Barcode</p>
                         <Input
                           placeholder="Add parcentage"

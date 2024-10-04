@@ -38,7 +38,7 @@ import CategoryInput from "../ui/CategoryInput";
 
 export default function AllProduct() {
   return (
-    <div className="w-full p-5">
+    <div className="w-full p-5 pt-0">
       <h4 className="text-lg font-semibold mb-4">Products</h4>
       <div className="block lg:flex items-center justify-between bg-[#f6f6f6] p-5 rounded-md">
         <Sheet>
@@ -50,7 +50,7 @@ export default function AllProduct() {
               <Plus className="scale-75" /> Add Product
             </Button>
           </SheetTrigger>
-          <SheetContent className="w-4/5">
+          <SheetContent className="w-full lg:w-4/5 overflow-auto">
             <SheetHeader>
               <SheetTitle>Add Product</SheetTitle>
               <SheetDescription>
@@ -58,64 +58,64 @@ export default function AllProduct() {
               </SheetDescription>
             </SheetHeader>
             <div className="space-y-4 my-5">
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Title/Name</p>
                 <Input
                   placeholder="Product Title/Name"
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Description</p>
                 <Textarea
                   placeholder="Product Description"
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Images</p>
                 <Input type="file" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product SKU</p>
                 <Input placeholder="Product SKU" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Barcode</p>
                 <Input
                   placeholder="Product Barcode"
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Category</p>
                 <CategoryInput />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Price</p>
                 <Input placeholder="Product Price" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Sale Price</p>
                 <Input placeholder="Sale Price" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Quantity</p>
                 <Input
                   placeholder="Product Quantity"
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Slug</p>
                 <Input placeholder="Product Slug" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Product Slug</p>
                 <CategoryInput />
               </div>
             </div>
-            <Button className="btnPrimary hover:bg-[#1c64f2]/90 w-full">
+            <Button className="btnPrimary hover:bg-[#1c64f2]/90 w-full flex-wrap">
               Add product
             </Button>
           </SheetContent>

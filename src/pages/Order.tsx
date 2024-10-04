@@ -36,7 +36,7 @@ const Order: React.FC = () => {
     console.log("View");
   };
   return (
-    <div className="w-full p-5">
+    <div className="w-full p-5 pt-0">
       <h4 className="text-lg font-semibold mb-4">Customer</h4>
 
       <Input

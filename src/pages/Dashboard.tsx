@@ -38,7 +38,12 @@ export default function Dashboard() {
         className="h-screen bg-white"
       >
         <div
-          style={{ display: "flex", flexDirection: "column", height: "100%" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
+            background: "#fff",
+          }}
         >
           <div className="mb-6 mt-4">
             <img src={logo} className="w-36 h-20 object-contain ml-20" />
@@ -115,7 +120,7 @@ export default function Dashboard() {
       <main>
         <div
           style={{
-            padding: "16px 24px",
+            padding: "16px 24px 0 24px",
             color: "#44596e",
           }}
         >

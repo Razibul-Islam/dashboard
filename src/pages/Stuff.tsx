@@ -36,10 +36,10 @@ import {
 
 export default function Stuff() {
   return (
-    <div className="w-full p-5">
+    <div className="w-full p-5 pt-0">
       <h4 className="text-lg font-semibold mb-4">Products</h4>
 
-      <div className="flex items-center justify-between bg-[#f6f6f6] p-5 rounded-md mt-3 gap-5">
+      <div className="flex flex-wrap md:flex-nowrap items-center justify-between bg-[#f6f6f6] p-5 rounded-md mt-3 gap-5">
         <Input
           type="text"
           placeholder="Search Stuff"
@@ -60,11 +60,14 @@ export default function Stuff() {
 
         <Sheet>
           <SheetTrigger asChild>
-            <Button className="btnPrimary hover:bg-[#1c64f2]/90" size={"lg"}>
+            <Button
+              className="btnPrimary hover:bg-[#1c64f2]/90 ml-auto w-full md:w-auto"
+              size={"lg"}
+            >
               <Plus className="scale-75" /> Add Stuff
             </Button>
           </SheetTrigger>
-          <SheetContent className="w-4/5">
+          <SheetContent className="w-full lg:w-4/5 overflow-auto">
             <SheetHeader>
               <SheetTitle>Add Stuff</SheetTitle>
               <SheetDescription>
@@ -72,26 +75,26 @@ export default function Stuff() {
               </SheetDescription>
             </SheetHeader>
             <div className="space-y-4 my-5">
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Name</p>
                 <Input placeholder="Name" className="max-w-[700px]" />
               </div>
 
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Stuff Images</p>
                 <Input type="file" className="max-w-[700px]" />
               </div>
 
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Email</p>
                 <Input placeholder="Eamil" className="max-w-[700px]" />
               </div>
 
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Contact Number</p>
                 <Input placeholder="Phone Number" className="max-w-[700px]" />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Joining Date</p>
                 <Input
                   placeholder="Sale Price"
@@ -99,7 +102,7 @@ export default function Stuff() {
                   className="max-w-[700px]"
                 />
               </div>
-              <div className="flex items-center justify-between w-full">
+              <div className="flex items-center justify-between w-full flex-wrap">
                 <p>Stuff Role</p>
                 <Select>
                   <SelectTrigger className="max-w-[700px]">
@@ -195,29 +198,29 @@ export default function Stuff() {
                       </SheetDescription>
                     </SheetHeader>
                     <div className="space-y-4 my-5">
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Name</p>
                         <Input placeholder="Name" className="max-w-[700px]" />
                       </div>
 
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Stuff Images</p>
                         <Input type="file" className="max-w-[700px]" />
                       </div>
 
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Email</p>
                         <Input placeholder="Eamil" className="max-w-[700px]" />
                       </div>
 
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Contact Number</p>
                         <Input
                           placeholder="Phone Number"
                           className="max-w-[700px]"
                         />
                       </div>
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Joining Date</p>
                         <Input
                           placeholder="Sale Price"
@@ -225,7 +228,7 @@ export default function Stuff() {
                           className="max-w-[700px]"
                         />
                       </div>
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full flex-wrap">
                         <p>Stuff Role</p>
                         <Select>
                           <SelectTrigger className="max-w-[700px]">
