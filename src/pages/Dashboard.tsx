@@ -52,7 +52,11 @@ export default function Dashboard() {
           <div style={{ flex: 1 }}>
             <Menu menuItemStyles={menuItemStyles}>
               <MenuItem icon={<LayoutDashboard className="scale-75" />}>
-                <Link to="/dashboard" className="w-full h-full block">
+                <Link
+                  to="/dashboard"
+                  onClick={() => setToggled(!toggled)}
+                  className="w-full h-full block"
+                >
                   Dashboard
                 </Link>
               </MenuItem>
@@ -60,6 +64,7 @@ export default function Dashboard() {
                 <MenuItem>
                   <Link
                     to="/dashboard/allProduct"
+                    onClick={() => setToggled(!toggled)}
                     className="w-full h-full block"
                   >
                     All Products
@@ -68,6 +73,7 @@ export default function Dashboard() {
                 <MenuItem>
                   <Link
                     to="/dashboard/offer-Product"
+                    onClick={() => setToggled(!toggled)}
                     className="w-full h-full block"
                   >
                     Offer Products
@@ -76,6 +82,7 @@ export default function Dashboard() {
                 <MenuItem>
                   <Link
                     to="/dashboard/createProduct"
+                    onClick={() => setToggled(!toggled)}
                     className="w-full h-full block"
                   >
                     Create Products
@@ -84,6 +91,7 @@ export default function Dashboard() {
                 <MenuItem>
                   <Link
                     to="/dashboard/createCategory"
+                    onClick={() => setToggled(!toggled)}
                     className="w-full h-full block"
                   >
                     Create Category
@@ -92,6 +100,7 @@ export default function Dashboard() {
                 <MenuItem>
                   <Link
                     to="/dashboard/createBrand"
+                    onClick={() => setToggled(!toggled)}
                     className="w-full h-full block"
                   >
                     Create Brand
@@ -99,17 +108,29 @@ export default function Dashboard() {
                 </MenuItem>
               </SubMenu>
               <MenuItem icon={<Users className="scale-75" />}>
-                <Link to="/dashboard/customer" className="w-full h-full block">
+                <Link
+                  to="/dashboard/customer"
+                  onClick={() => setToggled(!toggled)}
+                  className="w-full h-full block"
+                >
                   Customers
                 </Link>
               </MenuItem>
               <MenuItem icon={<Compass className="scale-75" />}>
-                <Link to="/dashboard/order" className="w-full h-full block">
+                <Link
+                  to="/dashboard/order"
+                  onClick={() => setToggled(!toggled)}
+                  className="w-full h-full block"
+                >
                   Orders
                 </Link>
               </MenuItem>
               <MenuItem icon={<User className="scale-75" />}>
-                <Link to="/dashboard/stuff" className="w-full h-full block">
+                <Link
+                  to="/dashboard/stuff"
+                  onClick={() => setToggled(!toggled)}
+                  className="w-full h-full block"
+                >
                   Our stuff
                 </Link>
               </MenuItem>
