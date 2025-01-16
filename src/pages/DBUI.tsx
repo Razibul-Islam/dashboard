@@ -49,9 +49,9 @@ export default function DBUI() {
   return (
     <div className="w-full h-full px-5">
       <div className="w-full h-full">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between flex-wrap w-full">
           <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
-          <div className="flex items-center justify-between gap-5">
+          <div className="flex items-center justify-between flex-wrap gap-5">
             <DatePicker className="mt-4" />
             <Button className="mt-4 bg-[#1c64f2] hover:bg-[#1c64f2]/90">
               Download
@@ -85,8 +85,8 @@ export default function DBUI() {
           />
         </div>
       </div>
-      <div className="w-full h-full flex gap-6">
-        <ChartContainer config={chartConfig} className="h-full w-3/5">
+      <div className="w-full h-full flex gap-6 flex-wrap lg:flex-nowrap">
+        <ChartContainer config={chartConfig} className="h-full w-full lg:w-3/5">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
@@ -101,7 +101,7 @@ export default function DBUI() {
             <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
           </BarChart>
         </ChartContainer>
-        <div className="w-2/5 h-full">
+        <div className="w-full lg:w-2/5 h-full">
           <RecentSalesCard
             title="Recent Sales"
             description="You made 265 sales this month."
