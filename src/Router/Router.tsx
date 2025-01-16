@@ -5,6 +5,7 @@ import CreateProduct from "@/components/pages/CreateProduct";
 import OfferProduct from "@/components/pages/offerProduct";
 import Invoice from "@/document/Invoice";
 import Customer from "@/pages/Customer";
+import DBUI from "@/pages/DBUI";
 import Main from "@/pages/Main";
 import Order from "@/pages/Order";
 import Stuff from "@/pages/Stuff";
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
     path: "/dashboard",
     element: <Main />,
     children: [
+      {
+        path: "/dashboard",
+        element: <DBUI />,
+      },
       {
         path: "/dashboard/allProduct",
         element: <AllProduct />,
